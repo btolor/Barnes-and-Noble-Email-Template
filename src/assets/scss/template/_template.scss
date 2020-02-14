@@ -1,5 +1,5 @@
 // Fonts:
-$main-font: Lato, Arial, sans-serif;
+$main-font: Lato,Arial,sans-serif;
 
 // Colors:
 $white: #FFFFFF;
@@ -9,3 +9,91 @@ $wrapper: #EAEAEA;
 $green-bg: #346250;
 $bn-gray: #DEDDD9;
 
+// start of email wrapper styles...
+.wrapper {
+    background: $wrapper;
+    background-color: $wrapper;
+
+    // start of header-container styles...
+    .header {
+        background: $green-bg;
+        background-color: $green-bg;
+        border-bottom: 2px solid $white;
+        .find{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 20px;
+            a{
+                img{
+                    width: 97px;
+                }
+            }
+        }
+        .logo{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            a{
+                img{
+                    width: 227px;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .view{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-right: 5px;
+            a{
+                img{
+                    width: 62px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    // end of header-container styles...
+
+    // start of coupon-container styles...
+    .coupon{
+        background-image:  url("../../assets/img/15-off-bg.png");
+        .offer{
+            padding-top: 50px;
+            padding-bottom: 40px;
+            a{
+                img{
+                    width: 226px;
+                    margin: 0 auto;
+                    padding-bottom: 30px;
+                }
+                .activate{
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    color: $white;
+                    font-family: $main-font;
+                    font-weight: 800;
+                    letter-spacing: 1.3px;
+                    font-weight: bold;
+                    border: 1px solid $white;
+                    width: fit-content;
+                    margin: 0 auto;
+                    padding: 14px 28px;
+                }
+                .text{
+                    padding-top: 30px;
+                    width: 90%;
+                    margin: 0 auto;
+                    font-family: $main-font;
+                    color: $white;
+                    line-height: 1.4;
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    // end of coupon-container styles...
+
+
+
+}
+
+// end of email wrapper styles...
