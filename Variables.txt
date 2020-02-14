@@ -1,7 +1,7 @@
-// Fonts:
+Fonts:
 $main-font: Lato, Arial, sans-serif;
 
-// Colors:
+Colors:
 $white: #FFFFFF;
 $dark-font: #21282D;
 $footer-font: #666666;
@@ -9,3 +9,4 @@ $wrapper: #EAEAEA;
 $green-bg: #346250;
 $bn-gray: #DEDDD9;
 
+Optimized Images:
