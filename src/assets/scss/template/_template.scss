@@ -1,5 +1,7 @@
 // Fonts:
-$main-font: Lato,Arial,sans-serif;
+$main-font: Lato,
+Arial,
+sans-serif;
 
 // Colors:
 $white: #FFFFFF;
@@ -7,7 +9,7 @@ $dark-font: #21282D;
 $footer-font: #666666;
 $wrapper: #EAEAEA;
 $green-bg: #346250;
-$bn-gray: #DEDDD9;
+$local-gray: #DEDDD9;
 
 // start of email wrapper styles...
 .wrapper {
@@ -19,53 +21,63 @@ $bn-gray: #DEDDD9;
         background: $green-bg;
         background-color: $green-bg;
         border-bottom: 2px solid $white;
-        .find{
+
+        .find {
             padding-top: 30px;
             padding-bottom: 30px;
             padding-left: 20px;
-            a{
-                img{
+
+            a {
+                img {
                     width: 97px;
                 }
             }
         }
-        .logo{
+
+        .logo {
             padding-top: 30px;
             padding-bottom: 30px;
-            a{
-                img{
+
+            a {
+                img {
                     width: 227px;
                     margin: 0 auto;
                 }
             }
         }
-        .view{
+
+        .view {
             padding-top: 30px;
             padding-bottom: 30px;
             padding-right: 5px;
-            a{
-                img{
+
+            a {
+                img {
                     width: 62px;
                     margin: 0 auto;
                 }
             }
         }
     }
+
     // end of header-container styles...
 
     // start of coupon-container styles...
-    .coupon{
-        background-image:  url("../../assets/img/15-off-bg.png");
-        .offer{
+    .coupon {
+        background-image: url("../../assets/img/15-off-bg.png");
+
+        .offer {
             padding-top: 50px;
             padding-bottom: 40px;
-            a{
-                img{
+
+            a {
+                img {
                     width: 226px;
                     margin: 0 auto;
                     padding-bottom: 30px;
                 }
-                .activate{
+
+                .activate {
                     text-transform: uppercase;
                     font-size: 18px;
                     color: $white;
@@ -74,13 +86,14 @@ $bn-gray: #DEDDD9;
                     letter-spacing: 1.3px;
                     font-weight: bold;
                     border: 1px solid $white;
-                    width: fit-content;
+                    width: 185px;
                     margin: 0 auto;
                     padding: 14px 28px;
                 }
-                .text{
+
+                .text {
                     padding-top: 30px;
-                    width: 90%;
+                    width: 94%;
                     margin: 0 auto;
                     font-family: $main-font;
                     color: $white;
@@ -90,9 +103,189 @@ $bn-gray: #DEDDD9;
             }
         }
     }
+
     // end of coupon-container styles...
 
+    // start of products-container styles...
+    .products {
+        .title {
+            h3 {
+                font-size: 26px;
+                font-family: $main-font;
+                color: $dark-font;
+                padding-top: 40px;
+                padding-bottom: 20px;
+            }
+        }
 
+        .books {
+            width: 94%;
+            margin: 0 auto;
+
+            .book {
+                padding: 40px 0;
+
+                table {
+                    width: 92%;
+                    margin: 0 auto;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 15px;
+                        font-family: $main-font;
+                        color: $dark-font;
+                        font-weight: 600;
+
+                        img {
+                            width: 110px;
+                            padding-bottom: 30px;
+                        }
+
+                        .shark {
+                            padding-bottom: 68px;
+                        }
+
+                        .top-ten {
+                            padding-bottom: 40px;
+                        }
+                    }
+
+                    .btn {
+                        border: 1px solid $dark-font;
+                        font-size: 14px;
+                        padding: 18px 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    // end of products-container styles...
+
+    // start of ads-container styles...
+    .ads {
+        background: $green-bg;
+        background-color: $green-bg;
+
+        .shipping {
+
+            .columns {
+                padding-top: 24px;
+                padding-bottom: 24px;
+
+                a {
+                    color: $white;
+                    font-family: $main-font;
+                    font-weight: bold;
+                    text-decoration: none;
+                    font-size: 20px;
+                }
+            }
+
+            .large {
+                p {
+                    font-size: 45px;
+                    margin-bottom: 0;
+                    color: $white;
+                    font-weight: 300;
+                    font-family: $main-font;
+                }
+            }
+
+            .small {
+                p {
+                    border-bottom: 1px solid $white;
+                    width: 8%;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .wrapper{
+            background-color: $white;
+        }
+        .ad{
+            width: 90%;
+            margin: 45px auto;
+            background: $white;
+            background-color: $white;
+            .columns{
+                padding-bottom: 0;
+            }
+            .ad-img{
+                img{
+                    width: 95px;
+                    padding-bottom: 14px;
+                }
+            }
+            a{
+                text-decoration: none;
+                color: $green-bg;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    // end of ads-container styles...
+
+    // start of local-container styles...
+    .local{
+        background: $local-gray;
+        background-color: $local-gray;
+        .columns{
+            padding: 0;
+        }
+        a{
+            img{
+                width: 260px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+    // end of local-container styles...
+
+    // start of footer-container styles...
+    .footer{
+        background: $wrapper;
+        background-color: $wrapper;
+        .social-media{
+            width: 80%;
+            margin: 0 auto;
+            .columns{
+                padding: 0;
+                a{
+                    img{
+                        width: 40px;
+                        padding-top: 40px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+        .footer-text{
+            .columns{
+                padding-bottom: 0;
+                p{
+                    margin-bottom: 0;
+                    line-height: 18px;
+                    font-size: 12px;
+                    font-family: $main-font;
+                    color: $footer-font;
+                    padding-bottom: 16px;
+                    a{
+                        text-decoration: underline;
+                        color: $footer-font;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+    // end of footer-container styles...
+
+// line-height: 18px;
+// 12px font
 
 }
 
