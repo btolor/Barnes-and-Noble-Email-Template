@@ -58,13 +58,22 @@ $local-gray: #DEDDD9;
                 }
             }
         }
+
+        @include small(596px){
+            .find{
+                display: none;
+            }
+            .view{
+                display: none;
+            }
+        }
     }
 
     // end of header-container styles...
 
     // start of coupon-container styles...
     .coupon {
-        background-image: url("../../assets/img/15-off-bg.png");
+        background-image: url("https://i.postimg.cc/tC0v3GxT/15-off-bg.png");
 
         .offer {
             padding-top: 50px;
@@ -86,14 +95,14 @@ $local-gray: #DEDDD9;
                     letter-spacing: 1.3px;
                     font-weight: bold;
                     border: 1px solid $white;
-                    width: 185px;
+                    width: 200px;
                     margin: 0 auto;
                     padding: 14px 28px;
                 }
 
                 .text {
                     padding-top: 30px;
-                    width: 94%;
+                    width: 100%;
                     margin: 0 auto;
                     font-family: $main-font;
                     color: $white;
@@ -114,7 +123,7 @@ $local-gray: #DEDDD9;
                 font-family: $main-font;
                 color: $dark-font;
                 padding-top: 40px;
-                padding-bottom: 20px;
+                padding-bottom: 0;
             }
         }
 
@@ -127,7 +136,7 @@ $local-gray: #DEDDD9;
 
                 table {
                     width: 92%;
-                    margin: 0 auto;
+                    margin: 0 auto 10px;
 
                     a {
                         text-decoration: none;
@@ -140,20 +149,24 @@ $local-gray: #DEDDD9;
                             width: 110px;
                             padding-bottom: 30px;
                         }
-
-                        .shark {
-                            padding-bottom: 68px;
-                        }
-
-                        .top-ten {
-                            padding-bottom: 40px;
+                        @include small(596px){
+                            img{
+                                width: 50% !important;
+                            }
                         }
                     }
 
                     .btn {
                         border: 1px solid $dark-font;
-                        font-size: 14px;
+                        font-size: 12px;
                         padding: 18px 8px;
+                        vertical-align: bottom;
+                    }
+                    @include small(596px){
+                        .btn{
+                            font-size: 16px !important;
+                            padding: 18px 14px !important;
+                        }
                     }
                 }
             }
@@ -182,39 +195,51 @@ $local-gray: #DEDDD9;
                 }
             }
 
-            .large {
-                p {
-                    font-size: 45px;
-                    margin-bottom: 0;
-                    color: $white;
-                    font-weight: 300;
-                    font-family: $main-font;
+            .large{
+                img{
+                   width: 6px; 
+                } 
+            }
+            .small{
+                display: none;
+                img{
+                    width: 100%;
+                    margin: 0 auto !important;
+                } 
+            }
+
+            @include small(596px){
+                .large{
+                    display: none !important;
+                }
+                .small{
+                    display: block !important;
+                    padding-top: 0 !important;
+                    padding-bottom: 0 !important;
                 }
             }
 
-            .small {
-                p {
-                    border-bottom: 1px solid $white;
-                    width: 8%;
-                    margin: 0 auto;
-                }
-            }
+            
         }
         .wrapper{
             background-color: $white;
         }
         .ad{
             width: 90%;
-            margin: 45px auto;
+            margin: 40px auto 10px;
             background: $white;
             background-color: $white;
             .columns{
-                padding-bottom: 0;
+                padding-bottom: 30px;
             }
             .ad-img{
                 img{
                     width: 95px;
-                    padding-bottom: 14px;
+                    padding-bottom: 10px;
+                }
+                @include small(596px){
+                    width: 100px !important;
+                    padding-bottom: 20px !important;
                 }
             }
             a{
@@ -233,7 +258,7 @@ $local-gray: #DEDDD9;
         background: $local-gray;
         background-color: $local-gray;
         .columns{
-            padding: 0;
+            padding-bottom: 0;
         }
         a{
             img{
@@ -253,13 +278,19 @@ $local-gray: #DEDDD9;
             width: 80%;
             margin: 0 auto;
             .columns{
-                padding: 0;
+                padding-bottom: 0;
                 a{
                     img{
                         width: 40px;
                         padding-top: 40px;
-                        padding-bottom: 20px;
+                        padding-bottom: 18px;
                     }
+                }
+            }
+            @include small(596px){
+                .icon{
+                    padding-left: 4px !important;
+                    padding-right: 4px !important;
                 }
             }
         }
@@ -272,7 +303,6 @@ $local-gray: #DEDDD9;
                     font-size: 12px;
                     font-family: $main-font;
                     color: $footer-font;
-                    padding-bottom: 16px;
                     a{
                         text-decoration: underline;
                         color: $footer-font;
@@ -284,9 +314,11 @@ $local-gray: #DEDDD9;
     }
     // end of footer-container styles...
 
-// line-height: 18px;
-// 12px font
-
 }
 
 // end of email wrapper styles...
+
+
+
+
+
