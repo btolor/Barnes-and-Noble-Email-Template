@@ -1,3 +1,5 @@
+# Barnes-&-Noble-Email-Template
+Barnes & Noble responsive email template.
 # Live Demo:
 https://btolor.github.io/Barnes-and-Noble-Email-Template/
  
